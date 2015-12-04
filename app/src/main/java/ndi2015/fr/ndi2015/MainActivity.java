@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 final Spinner dropdown = (Spinner)findViewById(R.id.spinner);
                 final Spinner dropdown2 = (Spinner)findViewById(R.id.spinner2);
-                System.out.println("////////////////////////////////////////////////"+String.valueOf(dropdown.getSelectedItem()));
                 Intent intent = new Intent(MainActivity.this, AddPerson.class);
                 intent.putExtra(EXTRA_MESSAGE, e1.getText()+"/"+e2.getText()+"/"+String.valueOf(dropdown.getSelectedItem())+"/"+String.valueOf(dropdown2.getSelectedItem()));
                 startActivity(intent);
